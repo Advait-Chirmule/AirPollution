@@ -1,0 +1,17 @@
+.mainbody{
+    background-color: aliceblue;
+    padding: 25px;
+    margin: 10px;
+}
+
+.bootstrap{
+    margin: 10px;
+    background-color: aliceblue;
+}
+
+.footer{
+    background-color: rgb(179, 174, 174);
+    padding-left: 35px;
+    align-items: center;
+    height: 50px;
+}
