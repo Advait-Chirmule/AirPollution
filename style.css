@@ -15,3 +15,8 @@
     align-items: center;
     height: 50px;
 }
+
+.link{
+    text-decoration: none;
+    color: white;
+}
