@@ -43,15 +43,18 @@
       </nav>
       <div class="mainbody">
         <b>We used different conditions and saw the accuracy for each of these models:</b><br><br>
-          <b><i>(A) Using LinearRegression</i></b><br>
-        1) Very basic LinearRegression model with no date and removing all the rows with missing data: <b>65.00%</b> <br>
-        2) Added date to the above model but took only the month number: <b>65.12%</b> <br>
-        3) Added day as a fraction to the month to the above model, like January 2nd is 1 + 1/31: <b>65.13%</b> <br>
-        4) Use complete data as long as we have the AQI (output) and replaced missing cells with ffill and bfill: <b>58.47%</b> <br>
+        <b><i>(A) Using LinearRegression</i></b><br>
+        1) Very basic LinearRegression model with no date and removing all the rows with missing data: <b>65.00%</b><br>
+        2) Added date to the above model but took only the month number: <b>65.12%</b><br>
+        3) Added day as a fraction to the month to the above model, like January 2nd is 1 + 1/31: <b>65.13%</b><br>
+        4) Use complete data as long as we have the AQI (output) and replaced missing cells with ffill and bfill: <b>58.47%</b><br>
         5) Use above model but use rows with not more than 3 columns missing: <b>60.58%</b><br><br>
-          <b><i>(B) Using SVM</i></b><br>
-        6) Use the earlier model only with rows with complete information: <b>81.20%</b> <br>
-        7) Use the model with rows having not more than 3 columns missing: <b>75.30%</b>
+        <b><i>(B) Using SVM</i></b><br>
+        6) Use the earlier model only with rows with complete information: <b>81.20%</b><br>
+        7) Use the model with rows having not more than 3 columns missing: <b>75.30%</b><br><br>
+        <b><i>(C) Using Deep Learning</i></b><br>
+        8) Using Deep Learning on complete row dataset, two hidden layers: <b>~85%</b><br>
+        9) Using Deep Learning on incomplete-now-filled dataset, two hidden layers: <b>~70%</b>
       </div>
       <div class="bootstrap">
         <div class="row">
