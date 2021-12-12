@@ -49,14 +49,14 @@
         1) Very basic LinearRegression model with no date and removing all the rows with missing data: <b>19.84</b><br>
         2) Added date to the above model but took only the month number: <b>19.83</b><br>
         3) Added day to the month to the above model: <b>19.83</b><br>
-        4) Use complete data as long as we have the AQI (output) and replaced missing cells with ffill and bfill: <b>37.71</b><br>
-        5) Use above model but use rows with not more than 3 columns missing: <b>32.28</b><br><br>
+        4) Use complete data as long as we have the AQI (output) and replaced missing cells with mean of rows: <b>34.77</b><br>
+        5) Use above model but use rows with not more than 3 columns missing: <b>32.26</b><br><br>
         <b><i>(B) Using SVM</i></b><br>
-        6) Use the earlier model only with rows with complete information: <b>28.88</b><br>
-        7) Use the model with rows having not more than 3 columns missing: <b>60.04</b><br><br>
+        6) Use the earlier model only with rows with complete information: <b>18.51</b><br>
+        7) Use the model with rows having not more than 3 columns missing: <b>30.14</b><br><br>
         <b><i>(C) Using KNN</i></b><br>
         8) Using KNN on complete row dataset: <b>18.38</b><br>
-        9) Using KNN on incomplete-now-filled dataset: <b>33.40</b><br><br>
+        9) Using KNN on incomplete-now-filled dataset: <b>33.34</b><br><br>
         <b><i>(D) Using Deep Learning</i></b><br>
         10) Using Deep Learning on complete row dataset, two hidden layers: <b>~15</b><br>
         11) Using Deep Learning on incomplete-now-filled dataset, two hidden layers: <b>~26</b>
